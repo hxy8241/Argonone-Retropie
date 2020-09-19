@@ -20,7 +20,12 @@ argon_check_pkg() {
 
 #pkglist=(raspi-gpio python-rpi.gpio python3-rpi.gpio python-smbus python3-smbus i2c-tools)
 #for curpkg in ${pkglist[@]}; do
-#	sudo apt-get install -y $curpkg
+sudo apt-get install -y raspi-gpio
+sudo apt-get install -y python-rpi.gpio
+sudo apt-get install -y python3-rpi.gpio
+sudo apt-get install -y python-smbus
+sudo apt-get install -y python3-smbus
+sudo apt-get install -y i2c-tools
 #	RESULT=$(argon_check_pkg "$curpkg")
 #	if [ "NG" == "$RESULT" ]
 #	then
